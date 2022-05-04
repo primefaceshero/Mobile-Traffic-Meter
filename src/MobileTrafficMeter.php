@@ -1,15 +1,15 @@
 <?php
 
 namespace Primefaceshero\MobileTrafficMeter;
-use App\Models\LogUseEvent;
+use Primefaceshero\MobileTrafficMeter\Models\LogUseEvent;
 
 class MobileTrafficMeter
 {
-    public function insert($event, $user_id)
+    public function insert()
     {
         $log = new LogUseEvent();
-        $log->event = $event;
-        $log->user_id = $user_id;
+        $log->event = $request->event;
+        $log->user_id = $request->user_id;
         $log->save();
     }
 
