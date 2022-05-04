@@ -5,11 +5,11 @@ use App\Models\LogUseEvent;
 
 class MobileTrafficMeter
 {
-    public function insert()
+    public function insert($event, $user_id)
     {
         $log = new LogUseEvent();
-        $log->event = $request->event;
-        $log->user_id = $request->user_id;
+        $log->event = $event;
+        $log->user_id = $user_id;
         $log->save();
     }
 
