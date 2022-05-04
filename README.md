@@ -15,7 +15,7 @@ Add Service Provider to config/app.php in providers section
 Primefaceshero\MobileTrafficMeter\MobileTrafficMeterServiceProvider::class,
 ```
 
-Make migration
+Make migration and Model
 
 ``` bash
      Schema::create('log_use_events', function (Blueprint $table) {
@@ -24,6 +24,23 @@ Make migration
         $table->integer('user_id')->nullable();
         $table->timestamps();
     });
+```
+
+``` bash
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class LogUseEvent extends Model
+{
+    protected $fillable = [
+        'event',
+        'user_id',
+        'created_at'
+    ];
+}
 ```
 
 ## Seeder
