@@ -1,4 +1,6 @@
-<?php namespace Primefaceshero\MobileTrafficMeter;
+<?php 
+
+namespace Primefaceshero\MobileTrafficMeter;
 
 use Illuminate\Support\ServiceProvider;
 
