@@ -138,6 +138,7 @@ See the DemoController how to use the library to get information from the events
 ## Credits
 
 - [Felipe Peñailillo][link-author]
+- [Alejandro Isla][link-author-2]
 
 ## License
 
@@ -152,3 +153,5 @@ license. Please see the [license file](LICENSE) for more information.
 [link-downloads]: https://packagist.org/packages/primefaceshero/mobile-traffic-meter
 
 [link-author]: https://github.com/primefaceshero
+
+[link-author-2]: https://github.com/willywes
