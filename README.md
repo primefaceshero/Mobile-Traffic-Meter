@@ -19,7 +19,7 @@ Make migration and Model
 
 ``` bash
      Schema::create('log_use_events', function (Blueprint $table) {
-        $table->id();
+        $table->bigIncrements('id');
         $table->string('event');
         $table->integer('user_id')->nullable();
         $table->timestamps();
