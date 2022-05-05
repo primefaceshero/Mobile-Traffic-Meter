@@ -5,11 +5,11 @@ use Primefaceshero\MobileTrafficMeter\Models\LogUseEvent;
 
 class MobileTrafficMeter
 {
-    public static function insert()
+    public static function insert($event, $user_id = null)
     {
         $log = new LogUseEvent();
-        $log->event = $request->event;
-        $log->user_id = $request->user_id;
+        $log->event = $event;
+        $log->user_id = $user_id;
         $log->save();
     }
 
