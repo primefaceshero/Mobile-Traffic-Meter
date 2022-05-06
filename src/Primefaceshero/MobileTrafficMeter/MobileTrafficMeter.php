@@ -13,10 +13,10 @@ class MobileTrafficMeter
         $log->save();
     }
 
-    public static function faker()
+    public static function faker($cant = 100)
     {
         $events = ['Prueba 1', 'Prueba 2', 'Prueba 3'];
-        for ($i=1; $i <= 100; $i++) { 
+        for ($i=1; $i <= $cant; $i++) { 
             $log = new LogUseEvent();
             $log->event = $events[rand(0, 2)];
             $log->user_id = rand(1, 10);
