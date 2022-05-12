@@ -1,7 +1,14 @@
 # Mobile-Traffic-Meter
 Package that allows to obtain the traffic by views of a mobile application for reporting
 
-## Installation (Laravel)
+### Built With
+
+* [React.js](https://reactjs.org/)
+* [Laravel](https://laravel.com)
+* [Bootstrap](https://getbootstrap.com)
+* [JQuery](https://jquery.com)
+
+## Installation
 
 Via Composer
 
@@ -46,8 +53,8 @@ class LogUseEvent extends Model
 ## Seeder
 
 ``` bash
-Route::get('/faker', function () {
-    MobileTrafficMeter::faker();
+Route::get('/faker/{count}', function ($count) {
+    MobileTrafficMeter::faker($count);
     return "done";
 });
 ```
@@ -134,6 +141,19 @@ MobileTrafficMeter::getByEventAndDate($start_date, $end_date)
 ## Usage
 
 See the DemoController how to use the library to get information from the events
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch
+3. Commit your Changes 
+4. Push to the Branch
+5. Open a Pull Request
 
 ## Credits
 
